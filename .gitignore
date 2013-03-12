@@ -1,0 +1,15 @@
+*
+
+!.gitignore
+
+!.emacs.d/
+!.emacs.d/*
+.emacs.d/session.*
+
+!.vimrc
+
+!.zshrc
+!.zkbd
+!.zkbd/*
+
+*~
