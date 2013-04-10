@@ -6,6 +6,8 @@ setopt appendhistory beep extendedglob nomatch
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
+
+zstyle ':completion:*' matcher-list 'r:|[._-]=** r:|=**'
 zstyle :compinstall filename '/home/vfedotov/.zshrc'
 
 autoload -Uz compinit
