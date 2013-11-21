@@ -71,6 +71,7 @@ zstyle ':vcs_info:*' check-for-changes true
 
 alias as='aptitude search'
 alias ai='sudo aptitude install'
+alias vim='vim -p'
 
 torrents=/media/Torrents/torrents/
 
