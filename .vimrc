@@ -102,3 +102,35 @@ set expandtab
 set t_Co=256
 colorscheme jellybeans
 
+set nocompatible              " be iMproved
+filetype off                  " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+Bundle 'klen/python-mode'
+Bundle 'majutsushi/tagbar'
+Bundle 'd.vim'
+Bundle 'msanders/snipmate.vim'
+Bundle 'scrooloose/nerdtree'
+
+nmap <F8> :TagbarToggle<CR>
+map <F2> :NERDTreeToggle<CR>
+
+"let g:pymode_rope_lookup_project = 0
+"let g:pymode_rope_vim_completion = 0 "не использовать автодополнение rope
+
+
+filetype plugin indent on     " required!
+"
+" Brief help
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install (update) bundles
+" :BundleSearch(!) foo - search (or refresh cache first) for foo
+" :BundleClean(!)      - confirm (or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Bundle commands are not allowed.
