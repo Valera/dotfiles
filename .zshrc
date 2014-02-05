@@ -70,9 +70,14 @@ zstyle ':vcs_info:git*' formats "%{$fg[grey]%}%s %{$reset_color%}%r/%S%{$fg[grey
 zstyle ':vcs_info:*' check-for-changes true
 
 alias as='aptitude search'
+alias ashow='aptitude show'
 alias ai='sudo aptitude install'
+alias listfiles='dpkg --listfiles'
 alias vim='vim -p'
 
 torrents=/media/Torrents/torrents/
 
 alias homegit='git --git-dir=$HOME/.homeconfig.git/ --work-tree=$HOME'
+
+h() { if [ -z "$*" ]; then history 1; else history 1 | egrep "$@"; fi; }
+

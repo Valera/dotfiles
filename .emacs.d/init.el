@@ -6,6 +6,8 @@
  '(current-language-environment "UTF-8")
  '(show-paren-mode t))
 
+(setq inhibit-splash-screen t)
+
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
 
 ;; tabs
