@@ -122,6 +122,7 @@ map <F2> :NERDTreeToggle<CR>
 
 "let g:pymode_rope_lookup_project = 0
 "let g:pymode_rope_vim_completion = 0 "не использовать автодополнение rope
+let g:pymode_rope_completion = 0 "не использовать автодополнение rope
 
 
 filetype plugin indent on     " required!
