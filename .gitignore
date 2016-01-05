@@ -11,10 +11,14 @@
 !.zshrc
 !.zkbd
 !.zkbd/*
+
 !.vim
 !.vim/syntax
 !.vim/syntax/d.vim
 !.vim/plugin
 !.vim/plugin/pep8.vim
+
+!.i3
+!.i3/*
 
 *~
