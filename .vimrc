@@ -118,6 +118,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle "Hackerpilot/DCD", {'rtp': 'editors/vim'}
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'Rykka/riv.vim'
 
 nmap <F8> :TagbarToggle<CR>
 map <F2> :NERDTreeToggle<CR>
