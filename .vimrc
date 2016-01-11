@@ -116,13 +116,19 @@ Bundle 'majutsushi/tagbar'
 Bundle 'd.vim'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle "Hackerpilot/DCD", {'rtp': 'editors/vim'}
+Bundle 'altercation/vim-colors-solarized'
 
 nmap <F8> :TagbarToggle<CR>
 map <F2> :NERDTreeToggle<CR>
 
-"let g:pymode_rope_lookup_project = 0
-"let g:pymode_rope_vim_completion = 0 "не использовать автодополнение rope
-let g:pymode_rope_completion = 0 "не использовать автодополнение rope
+let g:rope_lookup_project = 0
+let g:pymode_rope_lookup_project = 0
+let g:pymode_rope = 0
+let g:rope_vim_completion = 0 "не использовать автодополнение rope
+
+"let g:dcd_importPath=['/usr/include/dmd/phobos','/usr/include/dmd/druntime/import']
+"let g:dcd_path='/home/vfedotov/.vim/bundle/DCD'
 
 
 filetype plugin indent on     " required!
