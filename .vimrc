@@ -114,10 +114,17 @@ Bundle 'gmarik/vundle'
 Bundle 'klen/python-mode'
 Bundle 'majutsushi/tagbar'
 Bundle 'd.vim'
-Bundle 'msanders/snipmate.vim'
+Bundle 'tpope/vim-surround'
+" Bundle 'msanders/snipmate.vim'
+Bundle 'SirVer/ultisnips'
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 Bundle 'scrooloose/nerdtree'
 Bundle "Hackerpilot/DCD", {'rtp': 'editors/vim'}
 Bundle 'altercation/vim-colors-solarized'
+"colorscheme solarized
 Bundle 'Rykka/riv.vim'
 
 nmap <F8> :TagbarToggle<CR>
@@ -209,3 +216,8 @@ map Т N
 map Ь M
 map Б <
 map Ю >
+
+map <F9> :w <CR> :!gcc % -o %< && ./%< <CR>
+
+" Surround
+autocmd FileType rst let b:surround_46 = "``\r``"
